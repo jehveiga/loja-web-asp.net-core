@@ -1652,6 +1652,31 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "LojaGeek.Business/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LojaGeek.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LojaGeek.Business.dll": {}
+        }
+      },
+      "LojaGeekWeb.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "LojaGeek.Business": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/LojaGeekWeb.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LojaGeekWeb.Data.dll": {}
+        }
       }
     }
   },
@@ -6129,10 +6154,21 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "LojaGeek.Business/1.0.0": {
+      "type": "project",
+      "path": "../LojaGeek.Business/LojaGeek.Business.csproj",
+      "msbuildProject": "../LojaGeek.Business/LojaGeek.Business.csproj"
+    },
+    "LojaGeekWeb.Data/1.0.0": {
+      "type": "project",
+      "path": "../LojaGeekWeb.Data/LojaGeekWeb.Data.csproj",
+      "msbuildProject": "../LojaGeekWeb.Data/LojaGeekWeb.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "LojaGeekWeb.Data >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.17",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.17",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.17",
@@ -6174,7 +6210,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Jeh\\source\\repos\\Cursos-Desenvolvedor_io\\Dominando_AspNetCore\\Projetos_Curso\\AppLojaGeekWebMvc\\src\\LojaGeekWeb.Data\\LojaGeekWeb.Data.csproj": {
+              "projectPath": "C:\\Users\\Jeh\\source\\repos\\Cursos-Desenvolvedor_io\\Dominando_AspNetCore\\Projetos_Curso\\AppLojaGeekWebMvc\\src\\LojaGeekWeb.Data\\LojaGeekWeb.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

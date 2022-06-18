@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppLojaWebMvc.Models
+namespace LojaGeek.App.Models
 {
     public abstract class Entity
     {

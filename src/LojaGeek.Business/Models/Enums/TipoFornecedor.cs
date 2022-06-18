@@ -1,4 +1,4 @@
-﻿namespace AppLojaWebMvc.Models.Enums
+﻿namespace LojaGeek.App.Models.Enums
 {
     public enum TipoFornecedor
     {

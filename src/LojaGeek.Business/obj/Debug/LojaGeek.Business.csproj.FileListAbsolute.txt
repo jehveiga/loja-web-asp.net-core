@@ -1,0 +1,6 @@
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\LojaGeek.Business.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\LojaGeek.Business.pdb
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.csproj.AssemblyReference.cache
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.csproj.CoreCompileInputs.cache
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.pdb

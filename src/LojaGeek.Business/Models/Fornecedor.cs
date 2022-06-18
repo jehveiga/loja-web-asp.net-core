@@ -1,7 +1,7 @@
-﻿using AppLojaWebMvc.Models.Enums;
+﻿using LojaGeek.App.Models.Enums;
 using System.Collections.Generic;
 
-namespace AppLojaWebMvc.Models
+namespace LojaGeek.App.Models
 {
     public class Fornecedor : Entity
     {
@@ -13,5 +13,6 @@ namespace AppLojaWebMvc.Models
 
         /* EF Relations */
         public IEnumerable<Produto> Produtos { get; set; }
+
     }
 }

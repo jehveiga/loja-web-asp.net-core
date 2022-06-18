@@ -1,4 +1,4 @@
-﻿using AppLojaWebMvc.Models;
+﻿using LojaGeek.App.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

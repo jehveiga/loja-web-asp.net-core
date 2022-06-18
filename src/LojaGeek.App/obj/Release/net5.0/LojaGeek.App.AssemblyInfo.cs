@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-LojaGeek.App-57BD00A6-8FBA-40BB-8E44-C80670050CF9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LojaGeek.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
