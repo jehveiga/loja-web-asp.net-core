@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LojaGeek.Data.Mappings
 {
-    internal class ProdutoMapping : IEntityTypeConfiguration<Produto>
+    public class ProdutoMapping : IEntityTypeConfiguration<Produto>
     {
         public void Configure(EntityTypeBuilder<Produto> builder) // Configuração do mapeamento da tabela produto
         {
@@ -25,4 +25,5 @@ namespace LojaGeek.Data.Mappings
             builder.ToTable("Produtos");
         }
     }
+
 }

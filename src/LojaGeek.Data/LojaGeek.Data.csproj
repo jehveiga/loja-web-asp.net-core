@@ -123,6 +123,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Context\LojaGeekDbContext.cs" />
+    <Compile Include="Mappings\EnderecoMapping.cs" />
+    <Compile Include="Mappings\FornecedorMapping.cs" />
     <Compile Include="Mappings\ProdutoMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
