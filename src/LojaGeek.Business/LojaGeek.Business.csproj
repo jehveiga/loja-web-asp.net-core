@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IEnderecoRepository.cs" />
+    <Compile Include="Interfaces\IFornecedorRepository.cs" />
+    <Compile Include="Interfaces\IProdutoRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Entity.cs" />
     <Compile Include="Models\Enums\TipoFornecedor.cs" />
@@ -49,7 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Notificacoes\" />
     <Folder Include="Services\" />
     <Folder Include="Validations\" />
