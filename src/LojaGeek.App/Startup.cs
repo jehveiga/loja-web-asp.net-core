@@ -36,10 +36,12 @@ namespace LojaGeek.App
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
 
-            services.AddScoped<LojaGeekDbContext>();
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
-            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+            services.AddAutoMapper(typeof(Startup)); // Adicionando serviço do AutoMapper
+
+            services.AddScoped<LojaGeekDbContext>(); // inject dependency
+            services.AddScoped<IProdutoRepository, ProdutoRepository>(); // inject dependency
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>(); // inject dependency
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>(); // inject dependency
 
 
         }
