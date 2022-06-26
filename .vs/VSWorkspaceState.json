@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\LojaGeek.App",
+    "\\src\\LojaGeek.AppWeb"
   ],
-  "SelectedNode": "\\AppLojaGeekWeb.sln",
+  "SelectedNode": "\\src\\LojaGeek.AppWeb",
   "PreviewInSolutionExplorer": false
 }

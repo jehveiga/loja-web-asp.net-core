@@ -37,6 +37,6 @@ namespace LojaGeek.App.ViewModels
         public string Estado { get; set; }
 
         [HiddenInput] // Informando para aplicação que este campo sempre será tratado como um campo Hidden
-        public FornecedorViewModel Fornecedor { get; set; }
+        public Guid FornecedorId { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace LojaGeekWeb.Data.Repository
         protected Repository(LojaGeekDbContext db)
         {
             Db = db;
-            DbSet = db.Set<TEntity>();
+            DbSet = db.Set<TEntity>(); // Atalho para usar o DbSet para ficar menos verboso a chamada nos metodos a serem usados
         }
 
         public async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)

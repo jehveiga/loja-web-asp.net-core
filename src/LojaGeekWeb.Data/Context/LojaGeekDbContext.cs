@@ -19,6 +19,7 @@ namespace LojaGeekWeb.Data.Context
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(LojaGeekDbContext).Assembly);
 
+            //Impedindo a realização do delete cascade pela classes pai
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
 
             base.OnModelCreating(modelBuilder);

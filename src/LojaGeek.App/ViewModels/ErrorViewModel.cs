@@ -1,6 +1,11 @@
-﻿namespace LojaGeek.App.ViewModels
+using System;
+
+namespace LojaGeek.App.Models
 {
     public class ErrorViewModel
     {
+        public string RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }

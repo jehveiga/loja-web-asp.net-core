@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaGeek.App", "src\LojaGeek.App\LojaGeek.App.csproj", "{2E6CB7D5-0FCE-47E6-B652-1C87A948FD84}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaGeek.Business", "src\LojaGeek.Business\LojaGeek.Business.csproj", "{D5253DF7-E9FC-4BE5-AD7E-A3763F360FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaGeekWeb.Data", "src\LojaGeekWeb.Data\LojaGeekWeb.Data.csproj", "{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaGeekWeb.Data", "src\LojaGeekWeb.Data\LojaGeekWeb.Data.csproj", "{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaGeek.App", "src\LojaGeek.App\LojaGeek.App.csproj", "{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E6CB7D5-0FCE-47E6-B652-1C87A948FD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E6CB7D5-0FCE-47E6-B652-1C87A948FD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E6CB7D5-0FCE-47E6-B652-1C87A948FD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E6CB7D5-0FCE-47E6-B652-1C87A948FD84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5253DF7-E9FC-4BE5-AD7E-A3763F360FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5253DF7-E9FC-4BE5-AD7E-A3763F360FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5253DF7-E9FC-4BE5-AD7E-A3763F360FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

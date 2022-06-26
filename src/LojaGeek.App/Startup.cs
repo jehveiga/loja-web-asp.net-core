@@ -1,3 +1,4 @@
+using AutoMapper;
 using LojaGeek.App.Data;
 using LojaGeek.Business.Interfaces;
 using LojaGeekWeb.Data.Context;
@@ -27,23 +28,22 @@ namespace LojaGeek.App
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDbContext<LojaGeekDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddAutoMapper(typeof(Startup)); // Adicionando serviço do AutoMapper
+            services.AddAutoMapper(typeof(Startup));
 
-            services.AddScoped<LojaGeekDbContext>(); // inject dependency
-            services.AddScoped<IProdutoRepository, ProdutoRepository>(); // inject dependency
-            services.AddScoped<IFornecedorRepository, FornecedorRepository>(); // inject dependency
-            services.AddScoped<IEnderecoRepository, EnderecoRepository>(); // inject dependency
-
-
+            services.AddScoped<LojaGeekDbContext>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,15 +52,14 @@ namespace LojaGeek.App
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
+                app.UseDatabaseErrorPage();
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -71,6 +70,9 @@ namespace LojaGeek.App
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

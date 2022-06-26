@@ -131,8 +131,6 @@ namespace LojaGeekWeb.Data.Migrations
                         .WithOne("Endereco")
                         .HasForeignKey("LojaGeek.App.Models.Endereco", "FornecedorId")
                         .IsRequired();
-
-                    b.Navigation("Fornecedor");
                 });
 
             modelBuilder.Entity("LojaGeek.App.Models.Produto", b =>
@@ -141,15 +139,6 @@ namespace LojaGeekWeb.Data.Migrations
                         .WithMany("Produtos")
                         .HasForeignKey("FornecedorId")
                         .IsRequired();
-
-                    b.Navigation("Fornecedor");
-                });
-
-            modelBuilder.Entity("LojaGeek.App.Models.Fornecedor", b =>
-                {
-                    b.Navigation("Endereco");
-
-                    b.Navigation("Produtos");
                 });
 #pragma warning restore 612, 618
         }

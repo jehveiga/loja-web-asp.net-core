@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using LojaGeek.App.ViewModels;
 
 namespace LojaGeek.App.Data
 {
@@ -12,5 +13,6 @@ namespace LojaGeek.App.Data
             : base(options)
         {
         }
+        public DbSet<LojaGeek.App.ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; }
     }
 }
