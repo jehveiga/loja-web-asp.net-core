@@ -15,7 +15,7 @@ namespace LojaGeekWeb.Data.Repository
         {
         }
 
-        public async Task<Produto> ObterProdutosFornecedor(Guid id)
+        public async Task<Produto> ObterProdutoFornecedor(Guid id)
         {
             return await Db.Produtos
                 .AsNoTracking() // Desativando o Change Tracking do EntityFramework para ter uma performace melhor

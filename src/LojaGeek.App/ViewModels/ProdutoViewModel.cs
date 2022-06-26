@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace LojaGeek.App.ViewModels
 {
@@ -20,7 +22,7 @@ namespace LojaGeek.App.ViewModels
         [Display(Name = "Descrição")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Descricao { get; set; }
-        //public IFormFile ImagemUpload { get; set; } // Campo que será referenciado com a imagem dos produtos
+        public IFormFile ImagemUpload { get; set; } // Campo que será referenciado com a imagem dos produtos
 
         public string Imagem { get; set; }
 
@@ -33,5 +35,6 @@ namespace LojaGeek.App.ViewModels
         [Display(Name = "Ativo?")]
         public bool Ativo { get; set; }
         public FornecedorViewModel Fornecedor { get; set; }
+        public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
     }
 }

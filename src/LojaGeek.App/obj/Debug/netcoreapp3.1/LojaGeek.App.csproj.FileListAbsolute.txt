@@ -440,3 +440,8 @@ C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedores\Details.cshtml.g.cs
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedores\Edit.cshtml.g.cs
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedores\Index.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Create.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Delete.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Details.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Edit.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Index.cshtml.g.cs
