@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaGeek.App.ViewModels
 {
@@ -24,7 +25,7 @@ namespace LojaGeek.App.ViewModels
 
         [Display(Name = "Ativo?")]
         public bool Ativo { get; set; }
-
+        [NotMapped]
         public IEnumerable<ProdutoViewModel> Produtos { get; set; }
     }
 }

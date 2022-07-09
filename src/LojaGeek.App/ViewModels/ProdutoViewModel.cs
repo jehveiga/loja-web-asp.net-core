@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaGeek.App.ViewModels
 {
@@ -24,6 +25,7 @@ namespace LojaGeek.App.ViewModels
         public string Descricao { get; set; }
 
         [Display(Name = "Imagem do Produto")]
+        [NotMappedAttribute]
         public IFormFile ImagemUpload { get; set; } // Campo que será referenciado com a imagem dos produtos
 
         public string Imagem { get; set; }

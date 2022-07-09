@@ -87,10 +87,31 @@ namespace LojaGeek.App.Controllers
             if (id != produtoViewModel.Id)
                 return NotFound();
 
+            var produtoAtualizacao = await ObterProduto(id);
+            produtoViewModel.Fornecedor = produtoAtualizacao.Fornecedor;
+            produtoViewModel.Imagem = produtoAtualizacao.Imagem;
+
             if (!ModelState.IsValid)
                 return View(produtoViewModel);
 
-            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModel));
+            if (produtoViewModel.ImagemUpload != null)
+            {
+                var imgPrefixo = String.Concat(Guid.NewGuid(), "_"); //Criando um nome único com uma concatenação para o arquivo de imagem
+                if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo)) //Validando Upload do arquivo com um método
+                {
+                    return View(produtoViewModel);
+                }
+
+                produtoAtualizacao.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName; // Atualizando a edição da imagem para ser salva no banco
+            }
+
+            produtoAtualizacao.Nome = produtoViewModel.Nome; // Atribuindo os valores para o método de edição utilizando o objeto que veio do banco
+            produtoAtualizacao.Descricao = produtoViewModel.Descricao;
+            produtoAtualizacao.Valor = produtoViewModel.Valor;
+            produtoAtualizacao.Ativo = produtoViewModel.Ativo;
+
+            // Persistindo os dados do produto editado passando o produtoAtualizacao
+            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
 
             return RedirectToAction("Index");
         }
