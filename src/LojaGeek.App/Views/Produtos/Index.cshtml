@@ -10,7 +10,7 @@
 <p>
 	<a class="btn btn-info" asp-action="Create">Novo Produto</a>
 </p>
-<table class="table table-hover">
+<table class="table table-hover ">
 	<thead class="thead-dark">
 		<tr>
 			<th>
@@ -28,7 +28,7 @@
 			<th>
 				@Html.DisplayNameFor(model => model.Ativo)
 			</th>
-			<th></th>
+			<th class="col-3"></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -36,7 +36,7 @@
 		{
 			<tr>
 				<td>
-
+					<img src="~/imagens/@item.Imagem" alt="@item.Imagem" style="width: 70px; height: 100px "/>
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem => item.Nome)

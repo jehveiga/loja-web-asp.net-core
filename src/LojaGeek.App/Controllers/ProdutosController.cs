@@ -2,9 +2,11 @@
 using LojaGeek.App.Models;
 using LojaGeek.App.ViewModels;
 using LojaGeek.Business.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace LojaGeek.App.Controllers
@@ -55,9 +57,18 @@ namespace LojaGeek.App.Controllers
             if (!ModelState.IsValid)
                 return View(produtoViewModel);
 
+            var imgPrefixo = String.Concat(Guid.NewGuid(), "_"); //Criando um nome único com uma concatenação para o arquivo de imagem
+            if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo)) //Validando Upload do arquivo com um método
+            {
+                return View(produtoViewModel);
+            }
+
+            // Passando para o objeto/campo imagem o nome do arquivo para persistencia no banco
+            produtoViewModel.Imagem = String.Concat(imgPrefixo, produtoViewModel.ImagemUpload.FileName);
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
-            return View(produtoViewModel);
+            return RedirectToAction("Index");
+
         }
 
         public async Task<IActionResult> Edit(Guid id)
@@ -122,6 +133,30 @@ namespace LojaGeek.App.Controllers
             produto.Fornecedores =
                 _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
             return produto;
+        }
+
+        private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo) // Método de validação de imagem upload
+        {
+            if (arquivo.Length <= 0)
+                return false;
+
+            // Criando caminho do arquivo que será salvo a imagem Passando (Diretorio local da aplicação, caminho fixo do servidor, código gerado prefixo + nome do arquivo))
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixo + arquivo.FileName);
+
+            if (System.IO.File.Exists(path)) // Verificando se o caminho/nome arquivo já existe no diretório informado
+            {
+                // Se existir retornará a View com a mensagem informada com retorno no método falso
+                ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome");
+                return false;
+            }
+
+            await using (var stream = new FileStream(path, FileMode.Create))
+            {
+                // Gravando o arquivo no disco que foi recebido no método, copiando o conteúdo do parametro informado no método CopyToAsync() 
+                await arquivo.CopyToAsync(stream);
+            }
+
+            return true;
         }
     }
 }
