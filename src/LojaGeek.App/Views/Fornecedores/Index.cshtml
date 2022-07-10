@@ -1,4 +1,8 @@
-﻿@model IEnumerable<LojaGeek.App.ViewModels.FornecedorViewModel>
+﻿@using Microsoft.AspNetCore.Mvc.Razor
+@using Microsoft.AspNetCore.Razor.Language
+@using LojaGeek.App.Extensions
+@using LojaGeek.App.Models.Enums
+@model IEnumerable<LojaGeek.App.ViewModels.FornecedorViewModel>
 
 @{
 	ViewData["Title"] = "Lista de Fornecedores";
@@ -32,7 +36,7 @@
 					@Html.DisplayFor(modelItem => item.Nome)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.Documento)
+					@this.FormataDocumento(item.TipoFornecedor, item.Documento)
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem => item.Ativo)

@@ -15,5 +15,6 @@ namespace LojaGeek.App.Data
         }
         public DbSet<LojaGeek.App.ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; }
         public DbSet<LojaGeek.App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        public DbSet<LojaGeek.App.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
     }
 }

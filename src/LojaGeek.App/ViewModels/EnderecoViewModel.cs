@@ -6,6 +6,7 @@ namespace LojaGeek.App.ViewModels
 {
     public class EnderecoViewModel
     {
+        [Key]
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")] // O {0} representa o nome do campo referido
