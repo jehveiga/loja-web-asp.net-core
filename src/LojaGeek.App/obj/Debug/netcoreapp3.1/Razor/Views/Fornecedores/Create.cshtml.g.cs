@@ -27,7 +27,7 @@ using LojaGeek.App.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dfb563d7f13588069ac774f205070a9edb0948cc", @"/Views/Fornecedores/Create.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9caacd6ef711db5f6a6744917e0c7e762992daac", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"502ac001f511a40de9f1c1bff54be80e5e7bb904", @"/Views/_ViewImports.cshtml")]
     public class Views_Fornecedores_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<LojaGeek.App.ViewModels.FornecedorViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

@@ -27,7 +27,7 @@ using LojaGeek.App.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b1a2fbee436cc7c73f5c18c2d3122bda0420a721", @"/Views/Produtos/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9caacd6ef711db5f6a6744917e0c7e762992daac", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"502ac001f511a40de9f1c1bff54be80e5e7bb904", @"/Views/_ViewImports.cshtml")]
     public class Views_Produtos_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<LojaGeek.App.ViewModels.ProdutoViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width: 300px; height: 428px"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

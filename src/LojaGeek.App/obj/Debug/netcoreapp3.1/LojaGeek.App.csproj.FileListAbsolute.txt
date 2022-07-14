@@ -450,3 +450,7 @@ C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedores\_DetalhesEndereco.cshtml.g.cs
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\_ListaProdutos.cshtml.g.cs
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedores\_AtualizarEndereco.cshtml.g.cs
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\bin\Debug\netcoreapp3.1\appsettings.Production.Development.json
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\bin\Debug\netcoreapp3.1\appsettings.Staging.Development.json
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.App\bin\Debug\netcoreapp3.1\appsettings.Staging.json
