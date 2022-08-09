@@ -4,3 +4,10 @@ C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.csproj.CoreCompileInputs.cache
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.dll
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.pdb
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\FluentValidation.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\FluentValidation.xml
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeek.Business\obj\Debug\LojaGeek.Business.csproj.CopyComplete
