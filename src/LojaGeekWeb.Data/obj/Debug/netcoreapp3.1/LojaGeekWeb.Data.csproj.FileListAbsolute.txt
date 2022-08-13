@@ -14,3 +14,5 @@ C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeekWeb.Data\obj\Debug\netcoreapp3.1\LojaGeekWeb.Data.dll
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeekWeb.Data\obj\Debug\netcoreapp3.1\LojaGeekWeb.Data.pdb
 C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeekWeb.Data\obj\Debug\netcoreapp3.1\LojaGeekWeb.Data.genruntimeconfig.cache
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeekWeb.Data\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Jeh\source\repos\Cursos-Desenvolvedor_io\Dominando_AspNetCore\Projetos_Curso\AppLojaGeekWebMvc\src\LojaGeekWeb.Data\bin\Debug\netcoreapp3.1\FluentValidation.xml

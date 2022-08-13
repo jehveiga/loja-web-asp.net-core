@@ -1,5 +1,7 @@
 ﻿using LojaGeek.App.Extensions;
 using LojaGeek.Business.Interfaces;
+using LojaGeek.Business.Notificacoes;
+using LojaGeek.Business.Services;
 using LojaGeekWeb.Data.Context;
 using LojaGeekWeb.Data.Repository;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
@@ -16,6 +18,10 @@ namespace LojaGeek.App.Configurations
             services.AddScoped<IFornecedorRepository, FornecedorRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
             services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
+
+            services.AddScoped<INotificador, Notificador>();
+            services.AddScoped<IFornecedorService, FornecedorService>();
+            services.AddScoped<IProdutoService, ProdutoService>();
 
             return services;
         }

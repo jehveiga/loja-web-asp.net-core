@@ -1,13 +1,10 @@
 ﻿using LojaGeek.App.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace LojaGeek.Business.Interfaces
 {
-    public interface IFornecedorService
+    public interface IFornecedorService : IDisposable
     {
         Task Adicionar(Fornecedor fornecedor);
 

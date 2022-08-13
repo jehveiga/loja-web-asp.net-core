@@ -14,7 +14,9 @@ namespace LojaGeek.App.Extensions
         /// <returns>retorna a string convertida</returns>
         public static string FormataDocumento(this RazorPage page, int tipoPessoa, string documento)
         {
-            return tipoPessoa == 1 ? Convert.ToUInt64(documento).ToString(@"000\.000\.000\-00") : Convert.ToUInt64(documento).ToString(@"00\.000\.000\/0000\-00");
+            return tipoPessoa == 1 ? Convert.ToUInt64(documento).ToString(@"000\.000\.000\-00") :
+                Convert.ToUInt64(documento).ToString(@"00\.000\.000\/0000\-00");
+
         }
     }
 }

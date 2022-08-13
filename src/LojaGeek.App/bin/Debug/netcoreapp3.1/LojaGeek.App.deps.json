@@ -2459,6 +2459,14 @@
           "LojaGeekWeb.Data.dll": {}
         }
       },
+      "FluentValidation/11.0.0.0": {
+        "runtime": {
+          "FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -5271,6 +5279,11 @@
     },
     "LojaGeekWeb.Data/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/11.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

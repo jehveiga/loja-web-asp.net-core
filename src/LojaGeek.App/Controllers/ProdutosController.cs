@@ -16,13 +16,18 @@ namespace LojaGeek.App.Controllers
         private readonly IProdutoRepository _produtoRepository;
         private readonly IMapper _mapper;
         private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IProdutoService _produtoService;
 
-        public ProdutosController(IProdutoRepository produtoRepository, IFornecedorRepository fornecedorRepository,
-            IMapper mapper)
+        public ProdutosController(IProdutoRepository produtoRepository,
+                                  IFornecedorRepository fornecedorRepository,
+                                  IMapper mapper,
+                                  IProdutoService produtoService,
+                                  INotificador _notificador) : base(_notificador)
         {
             _produtoRepository = produtoRepository;
             _mapper = mapper;
             _fornecedorRepository = fornecedorRepository;
+            _produtoService = produtoService;
         }
 
         [Route("lista-de-produtos")]
@@ -68,7 +73,10 @@ namespace LojaGeek.App.Controllers
 
             // Passando para o objeto/campo imagem o nome do arquivo para persistencia no banco
             produtoViewModel.Imagem = String.Concat(imgPrefixo, produtoViewModel.ImagemUpload.FileName);
-            await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+            await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+
+            if (!OperacaoValida())
+                return View(produtoViewModel);
 
             return RedirectToAction("Index");
 
@@ -116,7 +124,10 @@ namespace LojaGeek.App.Controllers
             produtoAtualizacao.Ativo = produtoViewModel.Ativo;
 
             // Persistindo os dados do produto editado passando o produtoAtualizacao
-            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
+            await _produtoService.Atualizar(_mapper.Map<Produto>(produtoAtualizacao));
+
+            if (!OperacaoValida())
+                return View(produtoViewModel);
 
             return RedirectToAction("Index");
         }
@@ -142,7 +153,12 @@ namespace LojaGeek.App.Controllers
             if (produto is null)
                 return NotFound();
 
-            await _produtoRepository.Remover(id);
+            await _produtoService.Remover(id);
+
+            if (!OperacaoValida())
+                return View(produto);
+
+            TempData["Sucesso"] = "Produto excluido com sucesso!";
 
             return RedirectToAction("Index");
         }

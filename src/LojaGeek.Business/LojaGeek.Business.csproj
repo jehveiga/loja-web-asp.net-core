@@ -53,6 +53,7 @@
     <Compile Include="Interfaces\IEnderecoRepository.cs" />
     <Compile Include="Interfaces\IFornecedorRepository.cs" />
     <Compile Include="Interfaces\IFornecedorService.cs" />
+    <Compile Include="Interfaces\INotificador.cs" />
     <Compile Include="Interfaces\IProdutoRepository.cs" />
     <Compile Include="Interfaces\IProdutoService.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
@@ -64,15 +65,15 @@
     <Compile Include="Models\Validations\Documentos\ValidacaoDocs.cs" />
     <Compile Include="Models\Validations\EnderecoValidation.cs" />
     <Compile Include="Models\Validations\ProdutoValidation.cs" />
+    <Compile Include="Notificacoes\Notificacao.cs" />
+    <Compile Include="Notificacoes\Notificador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BaseService.cs" />
-    <Compile Include="Services\FornecedorServiceBase.cs" />
+    <Compile Include="Services\FornecedorService.cs" />
     <Compile Include="Services\ProdutoService.cs" />
     <Compile Include="Models\Validations\FornecedorValidation.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Notificacoes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
