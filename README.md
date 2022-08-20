@@ -3,9 +3,7 @@
 
 # Sobre o projeto
 
-Desenvolvimento de uma aplicação Web com ASP.NET MVC Core. Muitos desenvolvedores preferem o modelo de renderização server-side trabalhando com os excelentes recursos do Razor.
-
-Neste curso foi fonecido o conhecimento a desenvolver por completo uma aplicação ASP.NET MVC Core, desde o início do projeto até subir a aplicação em produção.
+Desenvolvimento de uma aplicação Web com ASP.NET MVC Core. Neste curso foi fornecido o conhecimento a desenvolver por completo uma aplicação ASP.NET MVC Core, desde o início do projeto até subir a aplicação em produção.
 
 Este curso suporta todas as versões do ASP.NET Core (até a 6.0) e foi utilizado o Visual Studio 2019 / 2022 para a construção da aplicação final.
 
@@ -27,17 +25,41 @@ Mensagem de negócios e afins capturadas para informar o usuário sobre ações 
 
 ![Lista de Fornecedores](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Lista_Fornecedores.png)
 
-## Layout da Pesquisa Simples e Agrupada de Vendas
+## Detalhes de Fornecedor
 
-![Tipos de Pesquisa de Vendas](https://github.com/jehveiga/workshop-asp-net-core-mvc/blob/master/assets/SalesRecords.png)
+![Detalhes de Fornecedor](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Detalhes_Fornecedor.png)
 
-## Layout da Consulta Simples por Datas
+## Novo Fornecedor
 
-![Pesquisa Simples por Data Inicial e Final](https://github.com/jehveiga/workshop-asp-net-core-mvc/blob/master/assets/SalesSimpleSearch.png)
+![Novo Fornecedor](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Novo_Fornecedor.png)
 
-## Layout de Exceção de Cadastro de informações no formulário inválidas
+## Editar Fornecedor
 
-![Cadastro Exceção Formulário](https://github.com/jehveiga/workshop-asp-net-core-mvc/blob/master/assets/ExceptionCreate.png)
+![Editar Fornecedor](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Editar_Fornecedor.png)
+
+## Excluir Fornecedor
+
+![Excluir Fornecedor](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Excluir_Fornecedor.png)
+
+## Listagem de Produtos
+
+![Listagem de Produtos](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Lista_Produtos.png)
+
+## Detalhes de Produto
+
+![Detalhes de Produto](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Detalhes_Produto.png)
+
+## Novo Produto
+
+![Novo Produto](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Novo_Produto.png)
+
+## Editar Produto
+
+![Editar Produto](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Editar_Produto.png)
+
+## Excluir Produto
+
+![Excluir Produto](https://github.com/jehveiga/loja-web-asp.net-core/blob/main/assets/Excluir_Produto.png)
 
 # Tecnologias Utilizadas
 
@@ -54,7 +76,7 @@ Mensagem de negócios e afins capturadas para informar o usuário sobre ações 
 ## Outras Tecnologias
 
 - Bootstrap
-- Asp.Net Core
+- Asp.Net Core MVC
 
 ## Banco de Dados
 
