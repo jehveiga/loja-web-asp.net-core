@@ -1,0 +1,34 @@
+[33m007e264[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Atualizando app
+[33mffe044b[m Corrigindo arquivo .ignore
+[33m36e8a86[m Update README.md
+[33m79aec44[m Create README.md
+[33me05b0bf[m Merge pull request #1 from jehveiga/add-license-1
+[33m94c556a[m[33m ([m[1;31morigin/add-license-1[m[33m)[m Create LICENCE
+[33m21c47a0[m adicionando as imagens Demo
+[33m8a61d9c[m Evitando falhas de segurança
+[33med39293[m Tratamento de erros
+[33m7a3d2a1[m Segurança e técnicas inéditas com identity
+[33mff84e37[m Regras de negócio e eventos de notificações
+[33meebd69e[m Validando Entidades
+[33m3da7d7d[m Roteamento inteligente
+[33mf9b7825[m Organizando a aplicação
+[33m86579f5[m Utilizando Ajax para preencher o CEP
+[33m7fd542c[m Utilizando Modal Window de edição
+[33m0a1f276[m Finalizando o ajuste das Views
+[33m2e62536[m Ajustando os campos requeridos e Globalizando a aplicação em pt-BR
+[33mde522fc[m Customização a edição do produto
+[33m3303d38[m Upload de imagem do produto
+[33m5f7c6a3[m Customizando as Views de Fonecedores e Produtos
+[33me46970e[m Criando a Controller de Produtos
+[33mbce84b1[m Reestruturando a Camada de Apresentação e criando a Controller de Fornecedores
+[33m3425f60[m Adicionando AutoMapper a aplicação
+[33m6dd964d[m Criando as ViewModels na camada de apresentação
+[33m079ce39[m Adicionando as classes concretasRepository e injeção de dependencia na Startup
+[33mde6a5fe[m Implementado as interfaces IRepository e a Classe Generica Repository
+[33m93e2619[m Criando as tabelas do banco das duas migrações
+[33me53139b[m Adicionando a primeira migration e a Script Migration
+[33mb163771[m Configurando mapeamento das classes Fornecedor e Endereco
+[33m1cbf2e1[m Configurando DbContext e configurando o mapeamento de Produtos
+[33m63f1b41[m Adicionando as classes do Modelo de dados
+[33m83ac777[m Criando as dvisões da appliacação
+[33mc1f20cb[m Criando a aplicação

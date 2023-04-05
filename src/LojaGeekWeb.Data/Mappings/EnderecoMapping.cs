@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LojaGeekWeb.Data.Mappings
 {
+    // Configuração fluent api
     public class EnderecoMapping : IEntityTypeConfiguration<Endereco>
     {
         public void Configure(EntityTypeBuilder<Endereco> builder) // Configuração do mapeamento da tabela fornecedor
@@ -38,7 +39,7 @@ namespace LojaGeekWeb.Data.Mappings
                 .HasColumnType("varchar(50)");
 
 
-            builder.ToTable("Enderecos");
+            builder.ToTable("Enderecos"); // Configurando o nome da tabela no banco de dados
         }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LojaGeekWeb.Data.Mappings
 {
+    // Configuração fluent api
     public class ProdutoMapping : IEntityTypeConfiguration<Produto>
     {
         public void Configure(EntityTypeBuilder<Produto> builder) // Configuração do mapeamento da tabela produto
@@ -22,7 +23,7 @@ namespace LojaGeekWeb.Data.Mappings
             .IsRequired()
             .HasColumnType("varchar(100)");
 
-            builder.ToTable("Produtos");
+            builder.ToTable("Produtos"); // Configurando o nome da tabela no banco de dados
         }
     }
 

@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LojaGeekWeb.Data.Mappings
 {
+    // Configuração fluent api
+    // A classe que possui as outras filhas que configura o relacionamento 
     public class FornecedorMapping : IEntityTypeConfiguration<Fornecedor>
     {
         public void Configure(EntityTypeBuilder<Fornecedor> builder) // Configuração do mapeamento da tabela fornecedor
@@ -19,7 +21,7 @@ namespace LojaGeekWeb.Data.Mappings
                 .HasColumnType("varchar(14)");
 
             // 1 : 1 => Fornecedor : Endereco
-            builder.HasOne(f => f.Endereco) 
+            builder.HasOne(f => f.Endereco)
                 .WithOne(e => e.Fornecedor);
 
             // 1 : N => Fornecedor : Produtos
@@ -28,7 +30,7 @@ namespace LojaGeekWeb.Data.Mappings
                 .HasForeignKey(p => p.FornecedorId);
 
 
-            builder.ToTable("Fornecedores");
+            builder.ToTable("Fornecedores"); // Configurando o nome da tabela no banco de dados
         }
     }
 }

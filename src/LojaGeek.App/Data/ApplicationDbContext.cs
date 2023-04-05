@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using LojaGeek.App.ViewModels;
 
 namespace LojaGeek.App.Data
 {
@@ -13,8 +9,8 @@ namespace LojaGeek.App.Data
             : base(options)
         {
         }
-        public DbSet<LojaGeek.App.ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; }
-        public DbSet<LojaGeek.App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
-        public DbSet<LojaGeek.App.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
+        public DbSet<ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; }
+        public DbSet<ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        public DbSet<ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
     }
 }

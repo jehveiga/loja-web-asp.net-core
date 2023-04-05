@@ -49,6 +49,7 @@ function BuscaCep() {
             $("#Endereco_Bairro").val("");
             $("#Endereco_Cidade").val("");
             $("#Endereco_Estado").val("");
+            $("#Endereco_Numero").val("");
         }
 
         //Quando o campo cep perde o foco.
