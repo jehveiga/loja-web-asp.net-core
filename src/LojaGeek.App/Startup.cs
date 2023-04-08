@@ -50,7 +50,8 @@ namespace LojaGeek.App
 
             services.AddMvcConfiguration();
 
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup)); // Adicionando o serviço do AutoMapper a coleção de serviços da Aplicação, irá ter referência pelo assembly
+                                                     // procurando a herança do perfil de mapeamento 'Profile'
 
             services.ResolveDependencies();
         }

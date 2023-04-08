@@ -7,10 +7,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaGeek.App.ViewModels
 {
+    // ViewModel são os espelhos das Models da camada de Business, assim filtrando as propriedades que serão apresentadas nas telas
     public class ProdutoViewModel
     {
         [Key] // Identificando este campo como um campo chave
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } // Aqui tem referência do Id pois não terá herança como na Business para ser mapeada pelo Entity
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")] // O {0} representa o nome do campo referido
         [Display(Name = "Fornecedor")]
@@ -26,7 +27,7 @@ namespace LojaGeek.App.ViewModels
         public string Descricao { get; set; }
 
         [Display(Name = "Imagem do Produto")]
-        [NotMappedAttribute]
+        [NotMapped]
         public IFormFile ImagemUpload { get; set; } // Campo que será referenciado com a imagem dos produtos
 
         public string Imagem { get; set; }

@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LojaGeek.App.ViewModels
 {
+    // ViewModel são os espelhos das Models da camada de Business, assim filtrando as propriedades que serão apresentadas nas telas
     public class EnderecoViewModel
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } // Aqui tem referência do Id pois não terá herança como na Business para ser mapeada pelo Entity
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")] // O {0} representa o nome do campo referido
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {2} a {1} caracteres", MinimumLength = 2)] // Ordem de parametros do StringLength {0}Campo, {1}Maximo e {2}Minimo
@@ -37,7 +38,7 @@ namespace LojaGeek.App.ViewModels
         [StringLength(50, ErrorMessage = "O campo {0} precisa ter entre {2} a {1} caracteres", MinimumLength = 2)] // Ordem de parametros do StringLength {0}Campo, {1}Maximo e {2}Minimo
         public string Estado { get; set; }
 
-        [HiddenInput] // Informando para aplicação que este campo sempre será tratado como um campo Hidden
+        [HiddenInput] // Informando para aplicação que este campo sempre será tratado como um campo type Hidden
         public Guid FornecedorId { get; set; }
     }
 }

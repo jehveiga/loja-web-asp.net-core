@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 
 namespace LojaGeekWeb.Data.Repository
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new() // Implementado a classe generica abstrata herdando da interface generica e especificando que a classe Repository é filha de Entity
+    // Implementado a classe generica abstrata herdando da interface generica e especificando que a classe Repository é filha de Entity
+    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new()
     {
-        protected readonly LojaGeekDbContext Db;
+        protected readonly LojaGeekDbContext Db; // Sendo protect dar acesso para herança de Repository
+
         protected readonly DbSet<TEntity> DbSet;
 
         protected Repository(LojaGeekDbContext db)
