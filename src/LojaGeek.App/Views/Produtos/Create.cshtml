@@ -14,7 +14,7 @@
 			<div class="form-group">
 				<label asp-for="FornecedorId" class="control-label"></label>
 				<select asp-for="FornecedorId" class="form-control" asp-items="@(new SelectList(Model.Fornecedores, "Id", "Nome"))">
-					<option></option>
+					<option>Selecione</option>
 				</select>
 				<span asp-validation-for="FornecedorId" class="text-danger"></span>
 
@@ -47,7 +47,7 @@
 			</div>
 			<div class="form-group form-check">
 				<label class="form-check-label">
-					<input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+					<input class="form-check-input" asp-for="Ativo" checked/> @Html.DisplayNameFor(model => model.Ativo)
 				</label>
 			</div>
 			<div class="form-group">
@@ -65,14 +65,5 @@
 @section Scripts {
 	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
-	<script>
-		$("#ImagemUpload").change(function() {
-			$("#img_nome").text(this.files[0].name);
-			$("#img_nome")[0].style.display = 'block';
-		});
-
-		$("#ImagemUpload").attr("data-val", "true");
-		$("#ImagemUpload").attr("data-val-required", "Preencha o campo Imagem");
-
-	</script>
+    <script src="~/js/createProdutos.js"></script>
 }

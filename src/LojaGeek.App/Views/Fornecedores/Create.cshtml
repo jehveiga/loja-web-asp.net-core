@@ -8,7 +8,7 @@
 
 <hr />
 <div class="row">
-	<div class="col-md-10">
+	<div class="col-md-4">
 		<form asp-action="Create">
 
 			<vc:Summary></vc:Summary>
@@ -29,9 +29,8 @@
 				<input type="radio" value="2" asp-for="TipoFornecedor" checked /> Pessoa Jurídica <br/>
 			</div>
 			<div class="form-group form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
-				</label>
+				<input checked="" class="form-check-input" asp-for="Ativo" id="ativo" wfd-id="id17"/>
+				<label class="form-check-label" for="ativo">@Html.DisplayNameFor(model => model.Ativo)</label>
 			</div>
 
 			<h4>Endereço</h4>

@@ -55,7 +55,7 @@ namespace LojaGeek.App.Controllers
             return View();
         }
 
-        [ClaimsAuthorize("Fornecedor","Adicionar")]
+        [ClaimsAuthorize("Fornecedor", "Adicionar")]
         [Route("novo-fornecedor")]
         [HttpPost]
         public async Task<IActionResult> Create(FornecedorViewModel fornecedorViewModel)
@@ -130,7 +130,7 @@ namespace LojaGeek.App.Controllers
             if (fornecedor is null)
                 return NotFound();
 
-            await _fornecedorService.Remover(id);
+            await _fornecedorRepository.Remover(id);
 
             if (!OperacaoValida())
                 return View(fornecedor);
@@ -193,11 +193,13 @@ namespace LojaGeek.App.Controllers
             return Json(new { sucess = true, url });
         }
 
+        // Criar método auxiliar de busca de fornecedor 
         private async Task<FornecedorViewModel> ObterFornecedorEndereco(Guid id)
         {
             return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorEndereco(id));
         }
 
+        // Criar método auxiliar de busca de fornecedor 
         private async Task<FornecedorViewModel> ObterFornecedorProdutosEndereco(Guid id)
         {
             return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorProdutosEndereco(id));

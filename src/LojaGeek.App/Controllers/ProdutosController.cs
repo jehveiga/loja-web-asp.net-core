@@ -54,7 +54,7 @@ namespace LojaGeek.App.Controllers
             return View(produtoViewModel);
         }
 
-        [ClaimsAuthorize("Produto","Adicionar")]
+        [ClaimsAuthorize("Produto", "Adicionar")]
         [Route("novo-produto")]
         public async Task<IActionResult> Create()
         {
@@ -95,6 +95,9 @@ namespace LojaGeek.App.Controllers
             var produtoViewModel = await ObterProduto(id);
             if (produtoViewModel is null)
                 return NotFound();
+
+            if (!ModelState.IsValid)
+                return View(produtoViewModel);
 
             return View(produtoViewModel);
         }

@@ -1,6 +1,5 @@
 using AutoMapper;
 using LojaGeek.App.Configurations;
-using LojaGeek.App.Data;
 using LojaGeekWeb.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,11 +33,6 @@ namespace LojaGeek.App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddIdentityConfiguration(Configuration);
-
-            // Add o serviço de contexto da camada de aplicação
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
 
             // Add o serviço de contexto da camada de Dados
             services.AddDbContext<LojaGeekDbContext>(options =>
