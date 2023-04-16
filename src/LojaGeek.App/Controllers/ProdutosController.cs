@@ -107,9 +107,12 @@ namespace LojaGeek.App.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
         {
+            // Validando o Id passado na URL com o Id passado via formulário
             if (id != produtoViewModel.Id)
                 return NotFound();
 
+            // Chamando o método para popular a ViewModel pelo banco com informações que não vieram do front no momento do Post
+            // para se precisar devolver o produto atualizado pelo banco em um response se necessário. Ex: Fornecedor, Imagem
             var produtoAtualizacao = await ObterProduto(id);
             produtoViewModel.Fornecedor = produtoAtualizacao.Fornecedor;
             produtoViewModel.Imagem = produtoAtualizacao.Imagem;
@@ -128,6 +131,8 @@ namespace LojaGeek.App.Controllers
                 produtoAtualizacao.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName; // Atualizando a edição da imagem para ser salva no banco
             }
 
+            // Adicionando as informações atualizadas que vieram do formulário e atualizando as que não podem ser alteradas pelo submit do formulário
+            // somente atualizadas pelo banco no caso fornecedor de  forma segura
             produtoAtualizacao.Nome = produtoViewModel.Nome; // Atribuindo os valores para o método de edição utilizando o objeto que veio do banco
             produtoAtualizacao.Descricao = produtoViewModel.Descricao;
             produtoAtualizacao.Valor = produtoViewModel.Valor;
@@ -199,7 +204,7 @@ namespace LojaGeek.App.Controllers
 
             if (System.IO.File.Exists(path)) // Verificando se o caminho/nome arquivo já existe no diretório informado
             {
-                // Se existir retornará a View com a mensagem informada com retorno no método falso
+                // Se existir retornará a View com a mensagem informada com retorno no método falso, adicionando no modelo a mensagem de erro abaixo
                 ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome");
                 return false;
             }

@@ -25,7 +25,7 @@ namespace LojaGeekWeb.Data.Repository
 
         public async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
         {
-            return await DbSet.AsNoTracking().Where(predicate).ToListAsync(); // AsNotracking ajuda com a performance de busca no banco desabilitando o Change Tracking do C#
+            return await DbSet.AsNoTracking().Where(predicate).ToListAsync(); // AsNotracking ajuda com a performance de busca no banco desabilitando o Change Tracking do EntityFramework
         }
 
         public virtual async Task<TEntity> ObterPorId(Guid id)
