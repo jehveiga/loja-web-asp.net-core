@@ -17,6 +17,9 @@ namespace LojaGeek.App.Configurations
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IFornecedorRepository, FornecedorRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+
+            // registrando e injetando o serviço de validação de moeda,
+            // configurado na pasta Extensions na classe criada MoedaValidationAttributeAdapterProvider
             services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
 
             services.AddScoped<INotificador, Notificador>();

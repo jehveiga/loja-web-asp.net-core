@@ -71,6 +71,7 @@ namespace LojaGeek.App
             app.UseAuthentication();
             app.UseAuthorization();
 
+            // Adicionando a extensão do método de configuração da globalização local escolhida na aplicação
             app.UseGlobalizationConfig();
 
             app.UseEndpoints(endpoints =>

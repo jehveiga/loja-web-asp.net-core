@@ -5,6 +5,8 @@ namespace LojaGeek.App.Configurations
 {
     public static class MvcConfig
     {
+        // Definindo as mensagens de validação que vão ser apresentadas nas Views
+        // sobrescrevendo as padrões definidas pelo Asp.Net Core, o padrão é em inglês
         public static IServiceCollection AddMvcConfiguration(this IServiceCollection services)
         {
             services.AddMvc(o =>

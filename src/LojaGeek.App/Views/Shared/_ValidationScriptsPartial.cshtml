@@ -1,5 +1,7 @@
 ﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+@*funções que valida as informações da moeda e data nos campos, no caso para padrão BR*@
 <script>
 	$.validator.methods.range = function (value, element, param) {
 		var globalizedValue = value.replace(",", ".");
