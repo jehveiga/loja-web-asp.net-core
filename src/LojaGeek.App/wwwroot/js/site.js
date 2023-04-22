@@ -105,6 +105,7 @@ function BuscaCep() {
     });
 }
 
+/*função a ser executada quando tiver uma mensagem box na View com algum tipo de informe escondendo a caixa de mensagem*/
 $(document).ready(function () {
     $("#msg_box").fadeOut(2500);
 });

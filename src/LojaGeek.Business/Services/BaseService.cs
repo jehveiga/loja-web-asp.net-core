@@ -15,6 +15,7 @@ namespace LojaGeek.Business.Services
             _notificador = notificador;
         }
 
+        // Notificando os erros encontrados na entidade, informando os erros encontrados por mensagem
         protected void Notificar(ValidationResult validationResult)
         {
             foreach (var error in validationResult.Errors)
@@ -28,6 +29,7 @@ namespace LojaGeek.Business.Services
             _notificador.Handle(new Notificacao(mensagem));
         }
 
+        // Validando a entidade passada como parâmetro
         protected bool ExecutarValidacao<TV, TE>(TV validacao, TE entidade) where TV : AbstractValidator<TE> where TE : Entity
         {
             var validator = validacao.Validate(entidade);

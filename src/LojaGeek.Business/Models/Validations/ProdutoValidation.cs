@@ -3,6 +3,8 @@ using LojaGeek.App.Models;
 
 namespace LojaGeek.Business.Models.Validations
 {
+    // Classe contendo as regras para validação dos formulários pelo back end constituindo a regra de negócio usando FluentValidation
+    // https://docs.fluentvalidation.net/en/latest/
     public class ProdutoValidation : AbstractValidator<Produto>
     {
         public ProdutoValidation()

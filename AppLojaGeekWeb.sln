@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaGeek.Business", "src\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaGeekWeb.Data", "src\LojaGeekWeb.Data\LojaGeekWeb.Data.csproj", "{70F7D00F-A91B-4AB5-B671-4FDBC141BE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaGeek.App", "src\LojaGeek.App\LojaGeek.App.csproj", "{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaGeek.App", "src\LojaGeek.App\LojaGeek.App.csproj", "{4D7E4490-7CF6-4D95-885C-2BF10B1F8E58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

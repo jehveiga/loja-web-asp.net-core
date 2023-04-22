@@ -23,6 +23,7 @@ namespace LojaGeek.Business.Notificacoes
             return _notificacoes;
         }
 
+        // Verifica se tem algum erro na lista de notificações para alguma atitude a ser tomada seguindo as regras de negócios da aplicação
         public bool TemNotificacao()
         {
             return _notificacoes.Any();

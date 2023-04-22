@@ -26,6 +26,7 @@ namespace LojaGeek.Business.Services
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)
                 || !ExecutarValidacao(new EnderecoValidation(), fornecedor.Endereco)) return;
 
+            // Verificando se existe um fornecedor com documento passado igual a um no banco
             if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento).Result.Any())
             {
                 Notificar("Já existe um fornecedor com este documento informado.");
@@ -40,6 +41,7 @@ namespace LojaGeek.Business.Services
         {
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)) return;
 
+            // Verificando se existe um fornecedor com documento passado igual a um no banco e se o Id é diferente
             if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id).Result.Any())
             {
                 Notificar("Já existe um fornecedor com este documento informado.");
@@ -59,6 +61,7 @@ namespace LojaGeek.Business.Services
 
         public async Task Remover(Guid id)
         {
+            // Verificando se existe produtos cadastrados com o fornecedor passado para ser excluído
             if (_fornecedorRepository.ObterFornecedorProdutosEndereco(id).Result.Produtos.Any())
             {
                 Notificar("O fornecedor possui produtos cadastrados!");

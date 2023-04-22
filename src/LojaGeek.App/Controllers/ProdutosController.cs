@@ -161,7 +161,8 @@ namespace LojaGeek.App.Controllers
 
         [ClaimsAuthorize("Produto", "Excluir")]
         [Route("excluir-produto/{id:guid}")]
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Delete")] // Informando ao qual nome de Ação a ser executada quando for chamado o método
+        // O método abaixo tem nome diferente pois recebe os mesmo parâmetros que o método Get Delete não podendo conter o mesmo nome
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var produto = await ObterProduto(id);
