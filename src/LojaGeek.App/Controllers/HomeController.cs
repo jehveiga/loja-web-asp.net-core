@@ -1,12 +1,6 @@
-﻿using LojaGeek.App.Models;
-using LojaGeek.App.ViewModels;
+﻿using LojaGeek.App.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LojaGeek.App.Controllers
 {
@@ -29,6 +23,7 @@ namespace LojaGeek.App.Controllers
             return View();
         }
 
+        // Rota de tratamento de errro de acordo com erro informado pela app
         [Route("erro/{id:length(3,3)}")]
         public IActionResult Errors(int id)
         {

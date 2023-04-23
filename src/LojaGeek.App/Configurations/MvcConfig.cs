@@ -30,7 +30,8 @@ namespace LojaGeek.App.Configurations
                 o.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(x => "O campo deve ser numérico.");
                 o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(x => "Este campo precisa ser preenchido.");
 
-                o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); // Adicionando validação em todas suas controller através do recebimento do request, 
+                // validando o token pelo AutoValidate
             });
 
             return services;
