@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace LojaGeek.App.Controllers
 {
-    [Authorize]
+    [Authorize] // DataAnotation para informar que para ter acesso a está classe tem que está autorizado
     public class ProdutosController : BaseController
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -33,7 +33,7 @@ namespace LojaGeek.App.Controllers
             _produtoService = produtoService;
         }
 
-        [AllowAnonymous]
+        [AllowAnonymous] // Abre este método para não precisar de autenticação
         [Route("lista-de-produtos")]
         public async Task<IActionResult> Index()
         {
