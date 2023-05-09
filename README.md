@@ -11,7 +11,7 @@ O projeto está disponível nas versão 3.1. Aplicação com gerenciamento de Fo
 Tem todas validações de campos de preenchimento tanto no front-end como no back-end, no fornecedor pode ser editado tanto o fornecedor, o endereço do mesmo ou o produto cadastrado para aquele fornecedor, as validações mostram alertas para verificar as impossilidades de cada umas das ações que não foram possíveis realizar ou de sucesso ao realizar. Controles de Produtos e também com cadastros de imagens de cada produto, utilizados as validações dos campos usando as regras de negócios disponíveis na aplicação.
 
 A aplicação foi feita em 3 camadas (Negócios, Dados e Apresentação), cada camada tendo sua respectiva responsabilidade e limitando o forte acoplamento entre elas, validações de permissões para usuários e bloqueios de permissões para limitar ações sendo de adiçào, edição e exclusão.
-Mensagem de negócios e afins capturadas para informar o usuário sobre ações dentro da aplicação.
+Mensagem de negócios e afins capturadas para informar o usuário sobre ações dentro da aplicação. Utilizando a arquitetura limpa e principios SOLID na prática.
 
 # Apresentação - Fornecedores
 
