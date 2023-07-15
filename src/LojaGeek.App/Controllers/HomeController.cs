@@ -1,6 +1,5 @@
 ﻿using LojaGeek.App.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace LojaGeek.App.Controllers
 {

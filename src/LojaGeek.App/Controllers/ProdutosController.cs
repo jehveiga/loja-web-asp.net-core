@@ -4,12 +4,7 @@ using LojaGeek.App.Models;
 using LojaGeek.App.ViewModels;
 using LojaGeek.Business.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace LojaGeek.App.Controllers
 {
@@ -88,7 +83,7 @@ namespace LojaGeek.App.Controllers
 
         }
 
-        [ClaimsAuthorize("Produto", "Editar")]
+        //[ClaimsAuthorize("Produto", "Editar")]
         [Route("editar-produto/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -102,7 +97,7 @@ namespace LojaGeek.App.Controllers
             return View(produtoViewModel);
         }
 
-        [ClaimsAuthorize("Produto", "Editar")]
+        //[ClaimsAuthorize("Produto", "Editar")]
         [Route("editar-produto/{id:guid}")]
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
@@ -147,7 +142,7 @@ namespace LojaGeek.App.Controllers
             return RedirectToAction("Index");
         }
 
-        [ClaimsAuthorize("Produto", "Excluir")]
+        //[ClaimsAuthorize("Produto", "Excluir")]
         [Route("excluir-produto/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
@@ -159,7 +154,7 @@ namespace LojaGeek.App.Controllers
             return View(produto);
         }
 
-        [ClaimsAuthorize("Produto", "Excluir")]
+        //[ClaimsAuthorize("Produto", "Excluir")]
         [Route("excluir-produto/{id:guid}")]
         [HttpPost, ActionName("Delete")] // Informando ao qual nome de Ação a ser executada quando for chamado o método
         // O método abaixo tem nome diferente pois recebe os mesmo parâmetros que o método Get Delete não podendo conter o mesmo nome

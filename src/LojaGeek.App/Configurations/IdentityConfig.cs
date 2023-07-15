@@ -1,17 +1,14 @@
 ﻿using LojaGeek.App.Data;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace LojaGeek.App.Configurations
 {
     public static class IdentityConfig
     {
-        public static IServiceCollection AddIdentityConfiguration(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddIdentityConfiguration(this IServiceCollection services, ConfigurationManager configuration)
         {
+            // Politica de cookies (LGPD)
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -20,10 +17,11 @@ namespace LojaGeek.App.Configurations
 
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+
+            // Adicionando o Identity
+            services.AddIdentityCore<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             return services;

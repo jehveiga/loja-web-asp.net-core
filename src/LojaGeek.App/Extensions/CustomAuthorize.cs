@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Routing;
-using System.Linq;
 using System.Security.Claims;
 
 namespace LojaGeek.App.Extensions
@@ -43,7 +40,11 @@ namespace LojaGeek.App.Extensions
             // Verifica se está autenticado, se não tiver é direcionado para page de autenticação
             if (!context.HttpContext.User.Identity.IsAuthenticated)
             {
-                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { area = "Identity", page = "/Account/Login", ReturnUrl = context.HttpContext.Request.Path.ToString() }));
+                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new
+                {
+                    page = "/Account/Login",
+                    ReturnUrl = context.HttpContext.Request.Path.ToString()
+                }));
                 return;
             }
 

@@ -1,49 +1,46 @@
 {
-  "profiles": {
-    "IIS Dev": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "IIS - Staging": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Staging"
-      }
-    },
-    "Perfil 1": {
-      "commandName": "IISExpress",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
-      }
-    }
-  },
-  "IIS - Prod": {
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
-      }
-    },
-    "Self Hosting": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    }
-  },
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:60616",
-      "sslPort": 44391
+      "applicationUrl": "http://localhost:4686",
+      "sslPort": 44305
+    }
+  },
+  "profiles": {
+    "DevIO.App - Dev": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7017;http://localhost:5017",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "DevIO.App - Stage": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7017;http://localhost:5017",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging"
+      }
+    },
+    "DevIO.App - Prod": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7017;http://localhost:5017",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }
