@@ -1,9 +1,9 @@
-using AutoMapper;
 using LojaGeek.App.Configurations;
 using LojaGeekWeb.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using LojaGeek.App.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 // O builder � respons�vel por fornecer os m�todos de controle
 // dos servi�os e demais funcionalidades na configura��o da App
@@ -21,6 +21,14 @@ builder.Configuration
 // Nesta �rea adicionamos servi�os ao pipeline
 // ConfigureServices
 builder.Services.AddIdentityConfiguration(builder.Configuration);
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "AspNetCore.Cookies";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+        options.SlidingExpiration = true;
+    });
 
 // Adicionando a tela de erro de banco de dados (para desenvolvimento)
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

@@ -27,7 +27,7 @@ namespace LojaGeek.App.Controllers
             if (ModelState.IsValid)
             {
                 // Copia os dados do RegisterViewModel para o IdentityUser
-                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+                var user = new IdentityUser { UserName = model.Email, Email = model.Email, EmailConfirmed = true };
 
                 // Armazena os dados do usuário na tabela AspNetUsers
                 var result = await _userManager.CreateAsync(user, model.Password);
@@ -52,12 +52,14 @@ namespace LojaGeek.App.Controllers
         }
 
         [HttpGet]
+        [Route("login-user")]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [Route("login-user")]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
@@ -71,6 +73,20 @@ namespace LojaGeek.App.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Index), "home");
+        }
+
+        [HttpGet]
+        [Route("Identity/Account/Login")]
+        public IActionResult AccessDenied()
+        {
+            return View("AccessDenied");
         }
     }
 }

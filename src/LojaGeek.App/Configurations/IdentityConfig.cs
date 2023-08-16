@@ -1,4 +1,5 @@
 ﻿using LojaGeek.App.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,12 @@ namespace LojaGeek.App.Configurations
             {
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            services.ConfigureApplicationCookie(configure =>
+            {
+                configure.LoginPath = "/login-user";
+                configure.AccessDeniedPath = "/AccessDenied";
             });
 
 

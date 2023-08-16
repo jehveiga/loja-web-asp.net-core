@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "DevIO.App - Dev": {
+    "DevGeek.App - Dev": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DevIO.App - Stage": {
+    "DevGeek.App - Stage": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
@@ -26,7 +26,7 @@
         "ASPNETCORE_ENVIRONMENT": "Staging"
       }
     },
-    "DevIO.App - Prod": {
+    "DevGeek.App - Prod": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

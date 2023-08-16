@@ -7,8 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Content Remove="Views\Account\AccessDenied.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.19" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.20" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.20" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
@@ -23,6 +27,10 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\LojaGeekWeb.Data\LojaGeekWeb.Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Views\Account\AccessDenied.cshtml" />
 	</ItemGroup>
 
 </Project>

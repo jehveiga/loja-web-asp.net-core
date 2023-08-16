@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "61Q4dTLjS+57/Gz4gYJhRjaru7tWf2OJCiFlCA4MU+6ZHrLu8KtnG8+2cTkFc1erYK8KOfF1QTs7MYqKDWyp7A==",
+  "dgSpecHash": "Mr2y68JzMdN7Ol1a7RL86sF4RGa5VWGJe3fwZCDd0jDDoUyvGMZq+P6z/iTY072xWSzQ/dOsNAs1w7I8b/9zHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jeh\\source\\repos\\Cursos_C#\\Cursos-Desenvolvedor_io\\Dominando_AspNetCore\\Projetos_Curso\\AppLojaGeekWebMvc\\src\\LojaGeek.App\\LojaGeek.App.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,7 @@
     "C:\\Users\\Jeh\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
     "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.20\\microsoft.aspnetcore.cryptography.internal.6.0.20.nupkg.sha512",
     "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.20\\microsoft.aspnetcore.cryptography.keyderivation.6.0.20.nupkg.sha512",
-    "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.19\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.19.nupkg.sha512",
+    "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.20\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.20.nupkg.sha512",
     "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.20\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.20.nupkg.sha512",
     "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.20\\microsoft.aspnetcore.identity.ui.6.0.20.nupkg.sha512",
     "C:\\Users\\Jeh\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.3\\microsoft.aspnetcore.mvc.razor.extensions.6.0.3.nupkg.sha512",

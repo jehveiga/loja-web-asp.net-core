@@ -15,6 +15,6 @@ namespace LojaGeek.App.ViewModels
         [DataType(DataType.Password)]
         [Display(Name = "Confirme a senha")]
         [Compare(nameof(Password), ErrorMessage = "As senhas não conferem")]
-        public string? ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

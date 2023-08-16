@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LojaGeek.App.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Security.Claims;
 
@@ -42,7 +43,8 @@ namespace LojaGeek.App.Extensions
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary(new
                 {
-                    page = "/Account/Login",
+                    Controller = nameof(AccountController),
+                    action = "/Account/Login",
                     ReturnUrl = context.HttpContext.Request.Path.ToString()
                 }));
                 return;
