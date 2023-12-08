@@ -86,4 +86,4 @@ Mensagem de negócios e afins capturadas para informar o usuário sobre ações 
 
 Jefferson Veiga
 
-https://www.linkedin.com/in/jefferson-veiga-4927aa163/
+https://www.linkedin.com/in/jefferson-veiga-dev/
