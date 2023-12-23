@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Desenvolvimento de uma aplicação Web com ASP.NET MVC Core. Neste curso foi fornecido o conhecimento a desenvolver por completo uma aplicação ASP.NET MVC Core, desde o início do projeto até subir a aplicação em produção.
+Desenvolvimento de uma aplicação Web com ASP.NET MVC Core. Neste projeto foi desenvolver por completo uma aplicação ASP.NET MVC Core, desde o início do projeto até subir a aplicação em produção.
 
 Este curso suporta todas as versões do ASP.NET Core (até a 6.0) e foi utilizado o Visual Studio 2019 / 2022 para a construção da aplicação final.
 
